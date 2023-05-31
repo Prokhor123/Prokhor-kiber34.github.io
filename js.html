@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIBEROne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="" class="header-logo">
+        <nav class="header-nav">
+            <a href="index.HTML">Главная</a>
+            <a href="about.html">Об авторе</a>
+            <a href="modules.html">Пройденные мною Модули</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>страница для работы с js</h2>
+
+
+        <h3>Первые кнопки с onclick</h3>
+        <!-- кнопка доб. текста  -->
+        <button type="button" onclick="hello()">Нажми на меня!</button>
+        <!-- кнопка очистки -->
+        <button type="button" onclick="reset()">стереть</button>
+        <p id="example"></p>
+
+        <h3>Расширенная функция по замене текста</h3>
+        <p>1. Что такое HTML?</p>
+
+
+        <button type="button" onclick="set_text('p1', 'программа') ">Ответ </button>==>
+        <p id="p1">Ответ №1</p>
+
+        <p>2. Ты майнкампф?</p>
+        <button type="button" onclick="set_text2('p2', 'майнкампф') ">Ответ </button>==>
+        <p id="p2">Ответ №2</p>
+
+        <p>3. Майнкрафт это...?</p>
+        <button type="button" onclick="set_text3('p3', 'майнкампф') ">Ответ </button>==>
+        <p id="p3">Ответ №3</p>
+
+        <h3>Работа с формами JS</h3>
+
+        <div class="form">
+            <div class="form__item">
+                <div class="form__item-tittle">
+                    ФИО
+                </div>
+                <input type="text" placeholder="Иванов Иван Иванович" id="name">
+            </div>
+
+            <div class="form__item">
+                <div class="form__item-tittle">
+                    E-mail
+                </div>
+                <input type="email@" placeholder="email@*" id="email">
+            </div>
+
+            <div class="form__item">
+                <div class="form__item-tittle">
+                    Телефон
+                </div>
+                <input type="tel" placeholder="+7 228 777 17 01" id="phone">
+            </div>
+
+            <button type="submit" onclick="submit()">Отправить</button>
+            <p id="status"></p>
+        </div>
+        <h3>Изменения стилей с помощью js</h3>
+        <h4>Изменение цвета body</h4>
+        <input type="text" placeholder="" id="emai">
+        <button type="button" onclick="set_body_color_red('red')">Красный</button>
+        <button type="button" onclick="set_body_color_blue('blue')">Синий</button>
+        <button type="button" onclick="set_body_color_green('green')">Зелёный</button>
+        <button type="button" onclick="set_body_color_yellow('yellow')">Жёлтый</button>
+
+        <div class="form__item">
+            <div class="form__item-tittle">
+                ВВедите цвет
+            </div>
+            <input type="text" placeholder="id" id="color">
+        </div>
+        <button type="button" onclick="">Установить цвет</button>
+
+        <h4 id="font_size">Изменения размеров текста</h4>
+        <button type="button" onclick="set_font_size('font_size', '32px')">Изменить размер шрифта</button>
+
+        <h2>Изменение HTML атрибутов при помощи джавы</h2>
+        <button onclick="document.getElementById('pic_bulb').src='images/pic_bulbon.gif'">Включить свет</button>
+        <img id="pic_bulb" src="images/pic_bulboff.gif" style="width: 100px;">
+        <button onclick="document.getElementById('pic_bulb').src='images/pic_bulboff.gif'">Выключить свет</button>
+        <footer>
+            <div class="container">
+                <p>Cайт разработан резидентом 1 международной школы програмирования KIBEROne - Прохор негрпро228 (2023)
+                </p>
+
+            </div>
+        </footer>
+        <h3>оБЪЕКТЫ джавы</h3>
+
+        <p id="person"></p>
+        <button type="button" onclick="showPerson()">Показать объект person</button>
+        
+        <p id="Avto"></p>
+        <button type="button" onclick="showAvto()">Показать объект avto</button>
+
+        <p id="cat"></p>
+        <button type="button" onclick="cat.showInfo()">Показать объект cat</button>
+
+    </main>
+    </body>
+
+
+</html>
