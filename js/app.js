@@ -158,4 +158,6 @@ for (let ans_text in questions[i].answers) {
         `<label><br><input type="radio" name="question${i}" value="${ans_text}"> ${ans_text}) ${questions[i].answers[ans_text]} </label>`
     );
 }
-testContainer.innerHTML = out.join('');
+
+
+
